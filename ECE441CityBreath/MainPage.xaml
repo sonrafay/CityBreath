@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ECE441CityBreath.MainPage"
+             BackgroundColor="WhiteSmoke"
+             >
+    
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="10"
+            Padding="30,0"
+            VerticalOptions="Center"
+            WidthRequest="400" >
+
+            <Label
+                Text="Home Page"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Description"
+                FontSize="40"
+                HorizontalOptions="Center" 
+                TextColor="Black"/>
+            
+            <Image
+                Source="logo_main.png"
+                SemanticProperties.Description="Cute dog robot bot waving hi to you!"
+                HeightRequest="250"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="City Breath: ECE441"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                HorizontalOptions="Center" 
+                TextColor="Black"/>
+
+            <Label
+                Text="Advanced Robotic Surveillance for Urban Air Quality Safety"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Description"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                HorizontalOptions="Center" 
+                TextColor="Black"/>
+
+            <Button 
+                Text="Login Page" 
+                Clicked="OnNavigateButtonClicked" 
+                WidthRequest="400"
+                TextColor="Black"
+                FontAttributes="Bold"/>
+
+            <Button 
+                Text="Academic Planning" 
+                Clicked="QuitApplication" 
+                WidthRequest="400"
+                TextColor="Black"
+                FontAttributes="Bold"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

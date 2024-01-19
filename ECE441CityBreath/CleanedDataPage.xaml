@@ -1,0 +1,24 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ECE441CityBreath.CleanedDataPage"
+             BackgroundColor="WhiteSmoke">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="30,0" VerticalOptions="Center" WidthRequest="600">
+            <Label Text="Cleaned Data Page" FontSize="40" HorizontalOptions="Center" TextColor="Black" />
+
+            <Button Text="Histogram Plot"
+                    Clicked="HistogramPlot"
+                    WidthRequest="400"
+                    TextColor="Black"
+                    FontAttributes="Bold" />
+
+            <Button Text="Line Graph Plots"
+                    Clicked="LinePlot"
+                    WidthRequest="400"
+                    TextColor="Black"
+                    FontAttributes="Bold" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
